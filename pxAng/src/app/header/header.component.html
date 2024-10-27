@@ -1,41 +1,91 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid d-flex align-items-center">
-        <!-- Home Logo and Link -->
-        <a class="navbar-brand d-flex align-items-center" routerLink="/">
-            <img src="path/to/your-logo.png" alt="Logo" class="img-fluid me-2" style="height: 40px;">
-            <span>Logo</span>
-        </a>
+<div class="main-navbar shadow-sm sticky-top bg-light">
+    <!-- Top Navbar -->
+    <div class="top-navbar py-2" style="background-color: rgb(42, 62, 42); color: white;">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Logo Section -->
+                <div class="col-md-2 d-none d-md-block">
+                    <a routerLink="/" class="navbar-brand d-flex align-items-center fs-4 fw-bold text-white" style="height: 100%;">
+                        Phuc Xanh
+                    </a>
+                </div>
 
-        <!-- Navbar Toggle for Mobile View -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Search Bar Section -->
+                <div class="col-md-5">
+                    <form role="search" class="d-flex">
+                        <input type="search" placeholder="Search your product" class="form-control me-2 rounded-pill" />
+                        <button class="btn btn-light rounded-pill" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Links Section -->
+                <div class="col-md-5">
+                    <ul class="nav justify-content-end align-items-center">
+                        <!-- Cart Link -->
+                        <li class="nav-item">
+                            <a class="nav-link text-white" routerLink="/view-cart">
+                                <i class="fas fa-shopping-cart me-1"></i> Cart
+                            </a>
+                        </li>
+
+                        <!-- Wishlist Link -->
+                        <li class="nav-item">
+                            <a class="nav-link text-white" routerLink="/wishlist">
+                                <i class="fa fa-heart me-1"></i> Wishlist
+                            </a>
+                        </li>
+
+                        <!-- User Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-user me-1"></i> Account
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" routerLink="/profile"><i class="fa fa-user me-2"></i> Profile</a></li>
+                                <li><a class="dropdown-item" routerLink="/my-orders"><i class="fa fa-list me-2"></i> My Orders</a></li>
+                                <li><a class="dropdown-item" routerLink="/wishlist"><i class="fa fa-heart me-2"></i> My Wishlist</a></li>
+                                <li><a class="dropdown-item" routerLink="/view-cart"><i class="fa fa-shopping-cart me-2"></i> My Cart</a></li>
+                                <li><a class="dropdown-item" routerLink="/logout"><i class="fa fa-sign-out me-2"></i> Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Main Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+    <div class="container-fluid">
+        <a class="navbar-brand d-block d-md-none fs-5 fw-bold" routerLink="/">
+            Phuc Xanh
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
-        <!-- Navbar Links -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto d-flex align-items-center">
-                <!-- View Plant Link -->
-                <li class="nav-item d-flex align-items-center">
-                    <a class="nav-link d-flex align-items-center" routerLink="/view-category">
-                        View Plant
-                    </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav justify-content-center w-100 mb-2 mb-lg-0">
+              
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/view-category" style="color: rgb(55, 84, 55);">View Plants</a>
                 </li>
-
-                <!-- User Login Icon Link -->
-                <li class="nav-item d-flex align-items-center">
-                    <a class="nav-link d-flex align-items-center" routerLink="/user-login">
-                        <i class="fas fa-user me-2"></i>
-                        <span>Login</span>
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/new-arrivals" style="color: rgb(55, 84, 55);">New Arrivals</a>
                 </li>
-
-                <!-- Cart Link -->
-                <li class="nav-item d-flex align-items-center">
-                    <a class="nav-link d-flex align-items-center" routerLink="/view-cart">
-                        <i class="fas fa-shopping-cart me-2"></i>
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/featured-products" style="color: rgb(55, 84, 55);">Featured Products</a>
                 </li>
+               
+               
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/accessories" style="color: rgb(55, 84, 55);">Accessories</a>
+                </li>
+               
+                
             </ul>
         </div>
     </div>
 </nav>
+</div>
+

@@ -19,7 +19,7 @@
     z-index: -1;
 }
 .custom-button {
-    background-color: rgba(255, 255, 255, 0.3); /* Adjust alpha for transparency */
+    background-color: rgba(255, 255, 255, 0.4); /* Adjust alpha for transparency */
     color: white; 
     border: 1px solid white; 
     width:15vw;
@@ -30,7 +30,7 @@
 }
 
 .custom-button:hover {
-    background-color: rgba(255, 255, 255, 0.4); /* Adjust alpha for transparency */
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust alpha for transparency */
 
 }
 
