@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid d-flex align-items-center">
+        <!-- Home Logo and Link -->
+        <a class="navbar-brand d-flex align-items-center" routerLink="/">
+            <img src="path/to/your-logo.png" alt="Logo" class="img-fluid me-2" style="height: 40px;">
+            <span>Logo</span>
+        </a>
+
+        <!-- Navbar Toggle for Mobile View -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto d-flex align-items-center">
+                <!-- View Plant Link -->
+                <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link d-flex align-items-center" routerLink="/view-category">
+                        View Plant
+                    </a>
+                </li>
+
+                <!-- User Login Icon Link -->
+                <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link d-flex align-items-center" routerLink="/user-login">
+                        <i class="fas fa-user me-2"></i>
+                        <span>Login</span>
+                    </a>
+                </li>
+
+                <!-- Cart Link -->
+                <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link d-flex align-items-center" routerLink="/view-cart">
+                        <i class="fas fa-shopping-cart me-2"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

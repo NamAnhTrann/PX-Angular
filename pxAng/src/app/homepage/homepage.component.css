@@ -1,0 +1,215 @@
+
+
+/* Banner Section */
+.banner {
+    position: relative;
+    height: 110vh; 
+    overflow: hidden;
+    color: #fff;
+}
+
+/* Fullscreen Background Video */
+.banner-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.custom-button {
+    background-color: rgba(255, 255, 255, 0.3); /* Adjust alpha for transparency */
+    color: white; 
+    border: 1px solid white; 
+    width:15vw;
+    height:10vh;
+    border-radius:10px;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+
+}
+
+.custom-button:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* Adjust alpha for transparency */
+
+}
+
+.functionality-section{
+    background-color:rgb(245, 240, 230);
+}
+.functionality-circle img {
+    width: 500px; /* Set desired width for the image */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    margin-top: 10px; /* Adds some space between text and image */
+}
+.circle {
+    color:white;
+    width: 90px;              /* Set the width of the circle */
+    height: 90px;             /* Set the height of the circle */
+    border-radius: 50%;       /* Make the element a circle */
+    background-color:rgb(42, 62, 42);
+    display: flex;            /* Center text horizontally and vertically */
+    align-items: center;      /* Center text vertically */
+    justify-content: center;  /* Center text horizontally */
+    font-size: 40px;          /* Adjust text size as needed */
+    font-weight: bold;        /* Make text bold */
+    margin: 0 auto 10px auto; /* Center the circle and add spacing */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+
+}
+.circle:hover{
+    background-color:rgb(58, 91, 58);
+    transform: translateY(-7px);
+
+}
+.plant-image img {
+    width: 270px; /* Set desired width */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures the image fits within the specified dimensions */
+    border-radius:10px;
+}
+
+/* Default Button Style */
+.btn-custom {
+    background-color: rgb(55, 84, 55);    ;
+    color: white; /* Default text color */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    width:270px;
+}
+
+/* Custom Hover Effect */
+.btn-custom:hover {
+    background-color: rgba(68, 113, 68, 0.959); /* Background color on hover */
+    color: white; /* Text color on hover */
+    
+}
+.plant-information {
+    background-color: #f4f2ed; /* Light background color */
+    padding: 2rem 0;
+}
+
+.information-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Stack .information-box elements vertically */
+
+}
+
+.information-box {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centers text within the text-content */
+    max-width: 800px; /* Set a uniform max width */
+    margin: 1rem auto; /* Center the box itself in the container */
+    transition: transform 0.3s ease;
+}
+
+
+.information-box img {
+    width: 200px; /* Set width as needed */
+    height: 200px; /* Set fixed height */
+    border-radius: 8px;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.information-box .text-content {
+    max-width: 500px;
+}
+
+.information-box h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #37403b;
+    
+}
+
+.information-box p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.information-box button {
+    background-color:  rgb(55, 84, 55);
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+.information-box button:hover{
+    background-color:  rgb(66, 104, 66);
+
+}
+
+.information-box-2 {
+    flex-direction: row-reverse; /* Reverses the layout for box 2 */
+}
+
+
+
+.information-box button.btn-outline-secondary {
+    background-color:  rgb(55, 84, 55);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.information-box button.btn-outline-secondary:hover{
+    background-color:  rgb(66, 104, 66);
+
+}
+/* Accordion Header Styling */
+.accordion-button {
+    background-color: rgb(55, 84, 55);
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Change the color of the arrow icon */
+.accordion-button::after {
+    filter: brightness(0) invert(1); /* Makes the icon white */
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgba(68, 113, 68, 0.959); /* Different color when expanded */
+}
+
+.accordion-button:hover {
+    background-color: rgba(68, 113, 68, 0.959); /* Change color on hover */
+}
+
+/* Accordion collapse animation */
+.accordion-collapse {
+    transition: height 0.3s ease; /* Smooth ease effect for dropdown height */
+}
+
+/* Accordion Body Styling */
+.accordion-body {
+    color: rgb(42, 62, 42);
+    transition: opacity 0.3s ease; /* Smooth fade-in effect */
+    text-align: left;
+}
+
+.accordion-collapse.show .accordion-body {
+    opacity: 1; /* Fade in when opened */
+}
+.showcase-section .showcase-box {
+    min-width: 200px; /* Ensures a minimum width for each box */
+    max-width: 250px; /* Ensures a maximum width for each box */
+    margin: 0 10rem; /* Adds 2rem (or 32px) horizontal margin to each box */
+}
+
+
+
+
+
+
+
+
+
